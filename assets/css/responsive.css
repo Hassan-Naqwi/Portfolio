@@ -45,8 +45,6 @@
         flex-direction: column;
         align-items: start;
         gap: 30px;
-        padding-left: 20px;
-
     }
 
     #toggle:checked+label+.dropdown-content {
@@ -169,7 +167,7 @@
         flex-direction: column;
         align-items: start;
         gap: 30px;
-        padding-left: 20px;
+
 
     }
 
