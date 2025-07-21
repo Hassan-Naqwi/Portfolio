@@ -77,8 +77,6 @@ label {
     color: #0ea5e9;
 }
 
-
-
 nav ul {
     display: flex;
     padding-left: 0;
@@ -88,25 +86,35 @@ nav ul {
     align-items: center;
 }
 
+
+
 nav ul li a {
     text-decoration: none;
     color: #000000;
     font-size: 20px;
     font-weight: 600;
-    transition: color 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
 }
 
-nav ul li a:hover {
-    color: #0ea5e9;
+
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
-nav ul li {
-    transition: all 0.3s ease-in-out;
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #0ea5e9;
+    transition: all 0.5s ease-in-out;
+
 }
 
-nav ul li:hover {
-    transform: scale(1.05);
-}
 
 .btn {
     padding: 13px 17px;
@@ -121,6 +129,8 @@ nav ul li:hover {
     font-weight: 600;
     transition: all 0.3s ease-in-out;
     outline: 3px solid #000000;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .btn:hover {
@@ -139,6 +149,10 @@ nav ul li:hover {
 
 .mt-0 {
     margin-top: 0 !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
 }
 
 .mb-120 {
@@ -188,6 +202,10 @@ nav ul li:hover {
 
 .font20 {
     font-size: 20px;
+}
+
+.font22 {
+    font-size: 22px;
 }
 
 .font24 {
@@ -247,6 +265,10 @@ nav ul li:hover {
     height: 4px;
 }
 
+.ml-100 {
+    margin-left: 200px;
+}
+
 .linkline {
     display: flex;
     justify-content: space-between;
@@ -303,7 +325,7 @@ nav ul li:hover {
 
 .outline {
     outline: 2px solid #71717A;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .box2 {
@@ -364,4 +386,22 @@ footer {
 
 .outline:hover {
     outline: 3px solid #0ea5e9;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounce {
+    animation: bounce 2s ease-in-out infinite;
 }

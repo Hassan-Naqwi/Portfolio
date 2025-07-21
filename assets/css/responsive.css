@@ -8,6 +8,36 @@
         padding: 40px 20px !important;
     }
 
+    nav ul li a::after {
+        display: none;
+    }
+
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+
+    }
+
+    .exp {
+        margin: 0;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
+
     header,
     footer {
         padding: 0 20px;
@@ -27,6 +57,7 @@
 
     label {
         display: block;
+        cursor: pointer;
     }
 
     .dropdown-content {
@@ -35,23 +66,28 @@
         right: 0;
         top: 80px;
         width: 100%;
-        padding-bottom: 40px;
-        padding-top: 20px;
-        visibility: hidden;
+        padding-bottom: 30px;
         opacity: 0;
         transition: all 0.3s ease-in-out;
         box-shadow: 0 12px 5px -10px rgba(0, 0, 0, 0.3);
         border-radius: 15px;
     }
 
+    nav ul li a {
+        font-size: 12px !important;
+    }
+
+    nav ul .btn {
+        padding: 7px 10px;
+    }
+
     .dropdown-content ul {
         flex-direction: column;
         align-items: start;
-        gap: 30px;
+        gap: 15px;
     }
 
     #toggle:checked+label+.dropdown-content {
-        visibility: visible;
         opacity: 1;
     }
 
@@ -100,8 +136,12 @@
     }
 
     .btn {
-        font-size: 16px;
+        font-size: 12px;
         padding: 10px;
+    }
+
+    .font22 {
+        font-size: 14px;
     }
 
     .sociallinks {
@@ -126,6 +166,10 @@
         width: 100%;
     }
 
+    .ml-100 {
+        margin-left: 0;
+    }
+
 }
 
 @media (max-width:991px) and (min-width:768px) {
@@ -133,6 +177,11 @@
         width: 720px;
         padding: 0;
     }
+
+    .ml-100 {
+        margin-left: 0;
+    }
+
 
     section {
         padding: 40px 20px !important;
@@ -153,6 +202,7 @@
 
     label {
         display: block;
+        cursor: pointer;
     }
 
     .dropdown-content {
@@ -245,6 +295,11 @@
     section {
         padding: 40px 20px !important;
     }
+
+    .ml-100 {
+        margin-left: 120px;
+    }
+
 
     header,
     footer {
