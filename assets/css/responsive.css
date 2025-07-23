@@ -68,6 +68,7 @@
         width: 100%;
         padding-bottom: 30px;
         opacity: 0;
+        visibility: hidden;
         transition: all 0.3s ease-in-out;
     }
 
@@ -87,6 +88,7 @@
 
     #toggle:checked+label+.dropdown-content {
         opacity: 1;
+        visibility: visible;
     }
 
     .gap80 {
@@ -102,7 +104,7 @@
     }
 
     .mb-30 {
-        margin-bottom: 10px !important;
+        margin-bottom: 20px !important;
     }
 
     .font48 {
@@ -133,7 +135,8 @@
         font-size: 16px;
     }
 
-    .btn {
+    .btn,
+    .btn2 {
         font-size: 12px;
         padding: 10px;
     }
@@ -213,6 +216,7 @@
         padding-top: 20px;
         border-radius: 10px;
         opacity: 0;
+        visibility: hidden;
         transition: all 0.3s ease-in-out;
         box-shadow: 0 10px 5px -10px rgba(0, 0, 0, 0.3);
         border-radius: 40px;
@@ -227,8 +231,8 @@
 
 
     #toggle:checked+label+.dropdown-content {
-        display: block;
         opacity: 1;
+        visibility: visible;
     }
 
     .gap80 {
@@ -275,7 +279,8 @@
         font-size: 16px;
     }
 
-    .btn {
+    .btn,
+    .btn2 {
         font-size: 16px;
         padding: 10px;
     }
